@@ -7,6 +7,6 @@
   "description": "Lightweight, thread-safe state library for Unity",
   "repository": {
     "type": "git",
-    "url": "https://github.com/magicink/com.pyxlmedia.core.git"
+    "url": "https://github.com/magicink/com.pyxlmedia.states.git"
   }  
 }
