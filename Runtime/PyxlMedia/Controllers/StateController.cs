@@ -1,7 +1,7 @@
-using com.pyxlmedia.core.States;
+using PyxlMedia.States;
 using UnityEngine;
 
-namespace com.pyxlmedia.core.Controllers
+namespace PyxlMedia.Controllers
 {
     public abstract class StateController : MonoBehaviour, IStateController
     {

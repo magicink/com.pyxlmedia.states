@@ -1,7 +1,7 @@
-using com.pyxlmedia.core.Controllers;
+using PyxlMedia.Controllers;
 using UnityEngine;
 
-namespace com.pyxlmedia.core.States
+namespace PyxlMedia.States
 {
     public interface IState<in T> where T : IStateController
     {
