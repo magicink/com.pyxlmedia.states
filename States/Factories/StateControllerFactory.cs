@@ -1,7 +1,6 @@
-using PyxlMedia.Controllers;
-using PyxlMedia.States;
+using PyxlMedia.States.Controllers;
 
-namespace PyxlMedia.Factories
+namespace PyxlMedia.States.Factories
 {
     public abstract class StateControllerFactory<T> : StateController where T : StateController
     {

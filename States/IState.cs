@@ -1,4 +1,4 @@
-using PyxlMedia.Controllers;
+using PyxlMedia.States.Controllers;
 using UnityEngine;
 
 namespace PyxlMedia.States

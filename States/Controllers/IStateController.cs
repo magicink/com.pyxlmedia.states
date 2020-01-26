@@ -1,7 +1,6 @@
-using PyxlMedia.States;
 using UnityEngine;
 
-namespace PyxlMedia.Controllers
+namespace PyxlMedia.States.Controllers
 {
     public interface IStateController
     {

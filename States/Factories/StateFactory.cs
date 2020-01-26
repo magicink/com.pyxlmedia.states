@@ -1,7 +1,6 @@
 using System;
-using PyxlMedia.States;
 
-namespace PyxlMedia.Factories
+namespace PyxlMedia.States.Factories
 {
     public sealed class StateFactory<T> where T : State, new()
     {
