@@ -2,6 +2,10 @@ using PyxlMedia.States.Controllers;
 
 namespace PyxlMedia.States.Factories
 {
+    /**
+     * Used to create a thread-safe, singleton instance of a
+     * state controller.
+     */
     public abstract class StateControllerFactory<T> : StateController where T : StateController
     {
         private static bool _destroyed;
@@ -33,6 +37,12 @@ namespace PyxlMedia.States.Factories
                     }
                 }
             }
+        }
+
+        private void Awake()
+        {
+            gameObject.AddComponent<T>();
+            Instance = gameObject.GetComponent<T>();
         }
 
         public override void SetState(State state)

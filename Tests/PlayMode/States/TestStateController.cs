@@ -1,6 +1,6 @@
 ﻿using PyxlMedia.States.Factories;
 
-namespace Tests.PlayMode.States.Controllers
+namespace Tests.PlayMode.States
 {
     public class TestStateController : PyxlMedia.States.Controllers.StateController
     {

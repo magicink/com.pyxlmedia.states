@@ -1,4 +1,4 @@
-﻿namespace Tests.PlayMode.States.Controllers
+﻿namespace Tests.PlayMode.States
 {
     public class TestState : PyxlMedia.States.State {}
 }
