@@ -6,8 +6,7 @@ namespace PyxlMedia.States.Controllers
     {
         public GameObject GameObject => gameObject;
         public State CurrentState { get; set; }
-
-
+        
         public virtual void SetState(State state)
         {
             if (CurrentState == state) return;
@@ -29,6 +28,16 @@ namespace PyxlMedia.States.Controllers
         private void Update()
         {
             CurrentState?.Update(this);
+        }
+
+        private void OnDestroy()
+        {
+            CurrentState?.OnDestroy(this);
+        }
+
+        private void OnEnable()
+        {
+            CurrentState?.OnEnable(this);
         }
     }
 }

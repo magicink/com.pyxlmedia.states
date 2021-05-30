@@ -11,6 +11,8 @@ namespace PyxlMedia.States
         void FixedUpdate(T controller);
         void LateUpdate(T controller);
         void Update(T controller);
+        void OnDestroy(T controller);
+        void OnEnable(T controller);
         
         void OnCollisionEnter(T controller, Collision other);
         void OnCollisionExit(T controller, Collision other);
@@ -18,7 +20,7 @@ namespace PyxlMedia.States
         void OnCollisionEnter2D(T controller, Collision2D other);
         void OnCollisionExit2D(T controller, Collision2D other);
         void OnCollisionStay2D(T controller, Collision2D other);
-        
+
         void OnTriggerEnter(T controller, Collider other);
         void OnTriggerExit(T controller, Collider other);
         void OnTriggerStay(T controller, Collider other);

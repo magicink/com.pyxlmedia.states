@@ -6,15 +6,15 @@ namespace PyxlMedia.States
     public abstract class State<T> : IState<T> where T : IStateController
     {
         public virtual void Enter(T controller) {}
-
         public virtual void Exit(T controller) {}
 
         public virtual void FixedUpdate(T controller) {}
-
         public virtual void LateUpdate(T controller) {}
-
         public virtual void Update(T controller) {}
+        public virtual void OnDestroy(T controller) {}
+        public virtual void OnEnable(T controller) {}
 
+        
         public virtual void OnCollisionEnter(T controller, Collision other) {}
 
         public virtual void OnCollisionExit(T controller, Collision other) {}
