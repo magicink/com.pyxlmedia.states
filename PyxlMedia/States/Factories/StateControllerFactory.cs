@@ -29,7 +29,6 @@ namespace PyxlMedia.States.Factories
                     if (_instance == null)
                     {
                         _instance = value;
-                        DontDestroyOnLoad(value);
                     }
                     else
                     {
@@ -43,6 +42,7 @@ namespace PyxlMedia.States.Factories
         {
             gameObject.AddComponent<T>();
             Instance = gameObject.GetComponent<T>();
+            DontDestroyOnLoad(this);
         }
 
         public override void SetState(State state)
